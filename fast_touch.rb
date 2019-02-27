@@ -1,6 +1,6 @@
 require 'ruby2d'
 
-set background: 'black'
+set background: 'navy'
 set width: 800, height: 600
 set title: "Fast Touch"
 
@@ -26,7 +26,7 @@ on :mouse_down do |event|
     square = Square.new(
       x: rand(get(:width) -25), y: rand(get(:height) -25),
       size: rand(20..50),
-      color: 'red',
+      color: 'random',
     )
 
     start_time = Time.now
